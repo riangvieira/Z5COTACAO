@@ -2,57 +2,49 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Cotações - Rian Vieira</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotações de Moedas</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1e1e1e;
-      color: #fff;
+      background-color: #F75C03;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      color: #ffffff;
+      font-weight: bold;
     }
 
     .card {
-      background-color: #2c2c2c;
-      border-left: 6px solid #f97316; /* laranja */
-      padding: 24px 28px;
+      background: transparent;
+      padding: 20px 25px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       text-align: center;
-      width: 300px;
+      width: 280px;
     }
 
     .card h2 {
       margin-top: 0;
-      font-size: 20px;
-      color: #f97316;
-      margin-bottom: 18px;
+      font-size: 18px;
+      color: #ffffff;
+      margin-bottom: 15px;
     }
 
     .moeda {
       font-size: 16px;
-      margin: 12px 0;
-      color: #ddd;
+      margin: 10px 0;
+      color: #ffffff;
     }
 
     .valor {
       font-weight: bold;
-      color: #f97316;
+      color: #27e697; /* verde que harmoniza com o laranja */
     }
 
     .erro {
-      color: #ff5f5f;
+      color: #ffffff;
       font-weight: bold;
-    }
-
-    footer {
-      font-size: 11px;
-      color: #aaa;
-      margin-top: 18px;
     }
   </style>
 </head>
@@ -62,7 +54,6 @@
     <h2>Cotações de Hoje</h2>
     <div class="moeda" id="dolar">Dólar: <span class="valor">carregando...</span></div>
     <div class="moeda" id="euro">Euro: <span class="valor">carregando...</span></div>
-    <footer>Desenvolvido por Rian Vieira</footer>
   </div>
 
   <script>
